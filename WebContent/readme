@@ -1,0 +1,53 @@
+============================================================
+=================== RestFull Web Service =================== 
+============================================================
+
+------------------------------------------------------------
+
+Note : 
+
+1. Port can change according to your configuration of server.
+2. You can't delete/update first and second record because they are initialized by constructor. For update delete you need 
+   to insert new record and perform the operation on them.
+   
+-----------------------------------------------------------
+
+1. Get All Users 
+
+Method : Get
+http://localhost:8080/Rest_WS/user
+
+2. Get User
+
+Method : Get
+http://localhost:8080/Rest_WS/user/1
+
+3. Get User by year
+
+Method : Get
+http://localhost:8080/Rest_WS/user?year=2015
+
+4. Get User by start and end range
+
+Method : Get
+http://localhost:8080/Rest_WS/user?start=0&end=2
+
+5. Add New User
+
+Method : POST
+http://localhost:8080/Rest_WS/user/insert
+
+6. Update Existing User
+
+Method : PUT
+http://localhost:8080/Rest_WS/user/update/3
+
+7. Remove Existing User
+
+Method : DELETE
+http://localhost:8080/Rest_WS/user/delete/3
+
+8. Get the address of a user
+
+Method : GET
+http://localhost:8080/Rest_WS/user/2/address/view
